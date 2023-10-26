@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
 	},
 });
 
-const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Skills = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 	const router = useRouter();
 	const { t } = useTranslation('index');
 
@@ -34,4 +34,4 @@ const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 	);
 };
 
-export default About;
+export default Skills;
