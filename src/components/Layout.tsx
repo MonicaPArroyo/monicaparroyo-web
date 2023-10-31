@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '@/components/Nav';
+import Footer from './Footer';
 
 type LayoutProps = {
 	section: NavProps['section'];
@@ -17,8 +18,14 @@ const Layout: React.FC<LayoutProps> = ({ section, children }) => {
 				}}
 			>
 				<Nav section={section} />
-
-				{children}
+				<div
+					style={{
+						margin: '2rem auto',
+					}}
+				>
+					{children}
+				</div>
+				<Footer />
 			</div>
 		</div>
 	);

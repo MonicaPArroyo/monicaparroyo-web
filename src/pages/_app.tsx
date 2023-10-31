@@ -13,7 +13,7 @@ import Layout from '@/components/Layout';
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	const router = useRouter();
 	const page = router.pathname.split('/')[1];
-	const section = page === '' ? 'about' : page;
+	const section = page === '' ? 'home' : page;
 	return (
 		<NextUIProvider>
 			<NextThemesProvider attribute="class" defaultTheme="dark">

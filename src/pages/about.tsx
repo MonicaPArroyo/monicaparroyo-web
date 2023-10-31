@@ -9,7 +9,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
 	},
 });
 
-const Contact = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 	const { t } = useTranslation('index');
 	return (
 		<>
@@ -19,9 +19,9 @@ const Contact = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 					content="width=device-width, initial-scale=1"
 				/>
 			</Head>
-			<p>{t('comming-soon')}...</p>
+			<div>Algo</div>
 		</>
 	);
 };
 
-export default Contact;
+export default About;
