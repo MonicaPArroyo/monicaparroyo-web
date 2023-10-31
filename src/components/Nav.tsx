@@ -47,13 +47,17 @@ const Nav: React.FC<NavProps> = ({ section }) => {
 					className="md:hidden"
 				/>
 				<NavbarBrand>
-					<Image src={logo} alt="logo" width="64" height="64" />
-					<p className="font-bold text-inherit">Mónica P. Arroyo</p>
+					<Link as={NextLink} href="/" color="foreground">
+						<Image src={logo} alt="logo" width="64" height="64" />
+						<p className="font-bold text-inherit">
+							Mónica P. Arroyo
+						</p>
+					</Link>
 				</NavbarBrand>
 			</NavbarContent>
 			<NavbarContent className="hidden md:flex gap-4" justify="center">
 				<NavbarItem isActive={section === 'about'}>
-					<Link color="secondary" href="/" as={NextLink}>
+					<Link color="secondary" href="/about" as={NextLink}>
 						{t('about')}
 					</Link>
 				</NavbarItem>
@@ -84,7 +88,7 @@ const Nav: React.FC<NavProps> = ({ section }) => {
 						color="secondary"
 						className="w-full"
 						size="lg"
-						href="/"
+						href="/about"
 						as={NextLink}
 					>
 						{t('about')}
