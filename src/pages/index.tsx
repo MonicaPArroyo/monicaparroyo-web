@@ -78,6 +78,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 						width={493}
 						height={459}
 						isBlurred
+						disableSkeleton
 					/>
 				</div>
 			</main>
