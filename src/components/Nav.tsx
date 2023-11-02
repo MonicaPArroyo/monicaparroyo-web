@@ -49,9 +49,7 @@ const Nav: React.FC<NavProps> = ({ section }) => {
 				<NavbarBrand>
 					<Link as={NextLink} href="/" color="foreground">
 						<Image src={logo} alt="logo" width="64" height="64" />
-						<p className="font-bold text-inherit">
-							Mónica P. Arroyo
-						</p>
+						<p className="font-bold">Mónica P. Arroyo</p>
 					</Link>
 				</NavbarBrand>
 			</NavbarContent>

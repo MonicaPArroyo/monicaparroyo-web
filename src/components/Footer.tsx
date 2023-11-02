@@ -14,34 +14,37 @@ const Footer: React.FC<FooterProps> = () => {
 	return (
 		<div>
 			<div
-				style={{
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'space-between',
-					alignItems: 'center',
-					margin: '4rem',
-				}}
+				className="
+					flex
+					flex-col
+					md:flex-row
+					justify-between
+					items-center
+					m-4
+					lg:mx-12
+					gap-4
+				"
 			>
 				<div>
 					<div
-						style={{
-							textAlign: 'center',
-							marginBottom: '.5rem',
-							fontSize: '1.5rem',
-							fontWeight: 'bold',
-						}}
+						className="
+							text-center
+							mb-2
+							text-xl
+							font-bold
+						"
 					>
 						<p>{t('language')}</p>
 					</div>
 					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							justifyContent: 'space-between',
-							alignItems: 'center',
-							gap: '1rem',
-							height: '64px',
-						}}
+						className="
+							flex
+							flex-row
+							justify-between
+							items-center
+							gap-4
+							h-16
+						"
 					>
 						<Link
 							href={asPath}
@@ -65,25 +68,23 @@ const Footer: React.FC<FooterProps> = () => {
 				</div>
 				<div>
 					<div
-						style={{
-							textAlign: 'center',
-							marginBottom: '.5rem',
-							fontSize: '1.5rem',
-							fontWeight: 'bold',
-						}}
+						className="
+							text-center
+							mb-2
+							text-xl
+							font-bold
+						"
 					>
 						<p>Social</p>
 					</div>
 					<div
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							justifyContent: 'space-between',
-							alignItems: 'center',
-							gap: '1rem',
-							marginLeft: '5%',
-							marginRight: '5%',
-						}}
+						className="
+							flex
+							flex-row
+							justify-between
+							items-center
+							gap-4
+						"
 					>
 						<div>
 							<NextLink
@@ -169,12 +170,7 @@ const Footer: React.FC<FooterProps> = () => {
 				</div>
 			</div>
 			<Divider />
-			<div
-				style={{
-					textAlign: 'center',
-					marginTop: '1rem',
-				}}
-			>
+			<div className="text-center my-4">
 				<p>© 2023 Mónica P. Arroyo </p>
 			</div>
 		</div>
