@@ -19,7 +19,7 @@ const About = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 					content="width=device-width, initial-scale=1"
 				/>
 			</Head>
-			<div>Algo</div>
+			<p>{t('comming-soon')}...</p>
 		</>
 	);
 };
