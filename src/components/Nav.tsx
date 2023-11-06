@@ -59,11 +59,6 @@ const Nav: React.FC<NavProps> = ({ section }) => {
 						{t('about')}
 					</Link>
 				</NavbarItem>
-				<NavbarItem isActive={section === 'skills'}>
-					<Link color="secondary" href="/skills" as={NextLink}>
-						{t('skills')}
-					</Link>
-				</NavbarItem>
 				<NavbarItem isActive={section === 'projects'}>
 					<Link color="secondary" href="/projects" as={NextLink}>
 						{t('projects')}
@@ -90,17 +85,6 @@ const Nav: React.FC<NavProps> = ({ section }) => {
 						as={NextLink}
 					>
 						{t('about')}
-					</Link>
-				</NavbarMenuItem>
-				<NavbarMenuItem>
-					<Link
-						color="secondary"
-						className="w-full"
-						size="lg"
-						href="/skills"
-						as={NextLink}
-					>
-						{t('skills')}
 					</Link>
 				</NavbarMenuItem>
 				<NavbarMenuItem>
