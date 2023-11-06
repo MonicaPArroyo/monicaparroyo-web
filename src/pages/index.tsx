@@ -25,7 +25,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				className="
 					flex
 					flex-col
-					md:flex-row
+					lg:flex-row
 					justify-between
 					align-center
 					w-full
@@ -41,7 +41,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 					lg:w-1/2
 					text-center
 					px-8
-					lg:pl-12
+					lg:pl-16
 				"
 				>
 					<h1 className="text-4xl lg:text-5xl font-bold mb-4">
@@ -67,7 +67,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 					w-full
 					lg:w-1/2
 					px-8
-					lg:pr-12
+					lg:pr-16
 
 				"
 				>
